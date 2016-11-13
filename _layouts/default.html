@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html title=page.title description=page.description %}
+  {% include head.html %}
 
   <body>
-
+    
+    {% include navbar.html %}
+    
     <main>
       {{ content }}
     </main>
