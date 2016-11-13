@@ -7,14 +7,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ site.url }}">Spot Market Team 1</a>
+      <a class="navbar-brand" href="{{ "/" | absolute_url }}">Spot Market Team 1</a>
     </div>
 
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav">
         {% for page in site.pages %}
           {% if page.nav == true %}
-            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+            <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>
