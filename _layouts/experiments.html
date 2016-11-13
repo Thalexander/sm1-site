@@ -1,0 +1,14 @@
+---
+layout: page
+---
+
+{% for post in site.posts %}
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title"> <a href="{{ post.url | absolute_url }}"> {{ post.title }} </a> </h3>
+    </div>
+    <div class="panel-body">
+      {{ post.description }}
+    </div>
+  </div>
+{% endfor %}
