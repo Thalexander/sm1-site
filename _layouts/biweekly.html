@@ -1,0 +1,11 @@
+---
+layout: page
+---
+
+{% for report in site.data.biweekly %}
+  <div class="list-group">
+    <a href="{{ report.path | absolute_url }}">
+      <button type="button" class="list-group-item"> {{ report.date | date_to_long_string }} </button>
+    </a>
+  </div>
+{% endfor %}
