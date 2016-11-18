@@ -30,12 +30,13 @@ MoSCoW Analysis
 - The bot must be interactive
 - The bot must understand natural language
 - The bot must use the spot market recommendation engine
-- The bot must get the user's location
+- The bot must get the user's location if the channel of choice allows for it
 - The bot must provide appropriate recommendations based on user's input
+- The bot must recommend promotions and products in the vicinity of the user
+- The bot must be able to link to the user profile
 
 #### Should Have
-- The bot should get the user's data to interface with the recommendation engine
-- The bot should take into account user response to suggestions
+- The bot should be used to gather user feedback
 - The bot should not require the installation of a client app
 - The bot should be deployable on popular messaging platforms
 - The bot should be able to narrow down and present the user the most appropriate suggestions based on the results returned by the recommendation engine
@@ -43,5 +44,4 @@ MoSCoW Analysis
 #### Could have
 - The bot could be energy efficient
 - The bot could be aesthetically pleasing
-- The bot could recommend promotions and products in the vicinity of the user
 - The bot could allow for discovery of new places when requested by the user
