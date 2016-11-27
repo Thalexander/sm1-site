@@ -1,0 +1,22 @@
+<section id="timeline">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Timeline</h2>
+                <br />
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Weeks</th>
+                        <th>Activities</th>
+                    </tr>
+                    {% for activity in site.data.timeline %}
+                    <tr>
+                        <td>{{ activity.weeks }}</td>
+                        <td>{{ activity.activity }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
