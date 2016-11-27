@@ -1,0 +1,32 @@
+<section id="experiments" class="download text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h2 class="section-heading">Experiments</h2>
+                <p>We are conducting a series of experiments to understand how best to create the bot:</p>
+                <table class="table">
+                    <tr>
+                        <th>Experiment No.</th>
+                        <th>Experiment Title</th>
+                        <th>Experiment Details</th>
+                        <th>Experiment Results</th>
+                        <th>Success and Failure</th>
+                        <th>Done by</th>
+                        <th>Date</th>
+                    </tr>
+                    {% for experiment in site.data.experiments %}
+                    <tr>
+                        <td>{{ experiment.no }}</td>
+                        <td>{{ experiment.title }}</td>
+                        <td>{{ experiment.details }}</td>
+                        <td>{{ experiment.results }}</td>
+                        <td>{{ experiment.successfailure }}</td>
+                        <td>{{ experiment.names }}</td>
+                        <td>{{ experiment.Date | date: "%e/%m" }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
