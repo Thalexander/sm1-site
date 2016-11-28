@@ -1,0 +1,14 @@
+<section id="quote" class="download bg-primary text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h2 class="section-heading">Biweekly Reports! <i style="color:brown"class="fa fa-newspaper-o"></i></h2>
+                <p>We produce reports every two weeks to document our progress and goals</p>
+                <br />
+                {% for report in site.data.biweekly %}
+                <a href="{{ report.path | absolute_url }}" class="btn btn-xl btn-outline">{{ report.date | date_to_long_string }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
