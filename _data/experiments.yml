@@ -94,5 +94,5 @@
       detail: "Ask the user for confirmation to ensure the account is correct before associating it with the profile"
       id: 27
     - title: "Send the account details to Spot Market engine"
-      detail: "Pass the social media account details to the SPot Market engine by its REST API so it can be associated with the user's profile"
+      detail: "Pass the social media account details to the Spot Market engine by its REST API so it can be associated with the user's profile"
       id: 28
