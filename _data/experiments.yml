@@ -26,6 +26,20 @@
     - title: "Deploy Spot Market Engine"
       detail: "The Spot Market engine will need to be set up on an Azure as a Virtual Machine so it can then be queried by the Bot that will be created with the Microsoft Bot Framework"
       id: 8
+- title: "Allow user to connect to bot"
+  tests:
+    - title: "Create bot engine"
+      detail: "A bot will need to be created using Microsoft Bot framework do that users can connect to the bot"
+      id: 21
+    - title: "Deploy bot engine to web service"
+      detail: "The bot engine will need to be deployed as a web service on Azure so that it is constantly available for users"
+      id: 22
+    - title: "Connect channels to bot engine"
+      detail: "The channels (Such as Skype) will need to be registered so they pass messages from users to the bot engine web service so it can respond to user's requests"
+      id: 23
+    - title: "Process and respond to input from user"
+      detail: "The messages from the user will need to be processed with natural language processing (LUIS) and then formed into a request for Spot Market engine and then a response formatted to send to the user"
+      id: 24
 - title: "Get recommendations"
   tests:
     - title: "Get location from user if supported by platform"
@@ -68,20 +82,6 @@
     - title: "Set account data for current key to the fetched data"
       detail: "Set the account data for the unique key the user is logged in with to the account data for the key they are linking to"
       id: 20
-- title: "Allow user to connect to bot"
-  tests:
-    - title: "Create bot engine"
-      detail: "A bot will need to be created using Microsoft Bot framework do that users can connect to the bot"
-      id: 21
-    - title: "Deploy bot engine to web service"
-      detail: "The bot engine will need to be deployed as a web service on Azure so that it is constantly available for users"
-      id: 22
-    - title: "Connect channels to bot engine"
-      detail: "The channels (Such as Skype) will need to be registered so they pass messages from users to the bot engine web service so it can respond to user's requests"
-      id: 23
-    - title: "Process and respond to input from user"
-      detail: "The messages from the user will need to be processed with natural language processing (LUIS) and then formed into a request for Spot Market engine and then a response formatted to send to the user"
-      id: 24
 - title: "Allow user to connect social media accounts"
   tests:
     - title: "Prompt user for social media account"
