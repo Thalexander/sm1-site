@@ -1,0 +1,98 @@
+- title: "Process natural Language"
+  tests:
+    - title: "Create language understanding model in LUIS"
+      detail: "In order to manage a conversation with the user we will need to create a model using LUIS that will extract the key information from their messages to understand how to respond to their request"
+      id: 1
+    - title: "Deploy model to HTTP endpoint"
+      detail: "Allow the language understanding model to be queried over HTTP by deploying as a web service on Azure"
+      id: 2
+    - title: "Connect to HTTP endpoint"
+      detail: "Connect the bot so that is processes input text from users by passing it to the HTTP endpoint exposed for the language model to convert it into an action the bot can carry out"
+      id: 3
+- title: "Deploy Spot Market engine"
+  tests:
+    - title: "Deploy Spot Market database"
+      detail: "Data about retailers, customers, ratings and venues for the Spot Market engine are stored in a NoSQL database which will need to be deployed on Azure so it can be used by the engine"
+      id: 4
+    - title: "Deploy Spot Market blob storage"
+      detail: "In order to train the Machine Learning on Azure the data from the databse will need to be uploaded into blob storage in a vector format that allows the Matchbox recommender to extract the features and create recommendations"
+      id: 5
+    - title: "Create Azure ML experiment"
+      detail: "An experiment will need to be set up in Azure Machine Learning Workspace to match users with locations using matchbox recommender reading data from blob storage and exporting the resulting recommendations as a csv"
+      id: 6
+    - title: "Deploy ML web service"
+      detail: "In order to allow recommendations to be provided by the bot the Machine Learning Experiment will have to be deployed as a web service on Azure to allow the ratings to be queried"
+      id: 7
+    - title: "Deploy Spot Market Engine"
+      detail: "The Spot Market engine will need to be set up on an Azure as a Virtual Machine so it can then be queried by the Bot that will be created with the Microsoft Bot Framework"
+      id: 8
+- title: "Allow user to connect to bot"
+  tests:
+    - title: "Create bot engine"
+      detail: "A bot will need to be created using Microsoft Bot framework do that users can connect to the bot"
+      id: 21
+    - title: "Deploy bot engine to web service"
+      detail: "The bot engine will need to be deployed as a web service on Azure so that it is constantly available for users"
+      id: 22
+    - title: "Connect channels to bot engine"
+      detail: "The channels (Such as Skype) will need to be registered so they pass messages from users to the bot engine web service so it can respond to user's requests"
+      id: 23
+    - title: "Process and respond to input from user"
+      detail: "The messages from the user will need to be processed with natural language processing (LUIS) and then formed into a request for Spot Market engine and then a response formatted to send to the user"
+      id: 24
+- title: "Get recommendations"
+  tests:
+    - title: "Get location from user if supported by platform"
+      detail: "In order to provide recommendations based on location, the location of the user will need to be extracted either from the text using NLP or possibly from the channel"
+      id: 9
+    - title: "Format data for engine"
+      detail: "The message from the user will need to be converted into an action using natural language processing, this action can then be formatted as a query for the Spot Market engine"
+      id: 10
+    - title: "Send response to user"
+      detail: "Having received a response from the Spot Market engine for the query the results will now need to be formatted as a reply to the user in a natural language style, and possibly using carousels or action buttons depending on the response"
+      id: 11
+- title: "Connect user to profile"
+  tests:
+    - title: "Create unique key from platform and id"
+      detail: "In order to provide personal recommendations to the user the user needs to be linked to the Spot Market profile, to avoid registering which will save time and effort for the user, a unique key is created using the platform they are on (such as Skype) and their id provided by that"
+      id: 12
+    - title: "Check if key exists in database"
+      detail: "They unique key for the user will be used to query the account database to see if they already have a profile on Spot Market"
+      id: 13
+    - title: "If key does not exist create it"
+      detail: "If the user does not already have a profile, a profile will need to be created on Spot Market to use the machine learning components"
+      id: 14
+    - title: "Get account data from database using key"
+      detail: "Using the unique key the database can be queried for the user data for the Spot Market engine for calls to its REST API"
+      id: 15
+    - title: "Get profile from Spot Market engine using account data"
+      detail: "The user can then be logged in using the account data from the database into the SPot Market engine for personal recommendations"
+      id: 16
+- title: "Allow user to link accounts"
+  tests:
+    - title: "Get platform and id from user"
+      detail: "In order to associate the user with another account the unique key of that account will be needed to change the account they are connected to in the database"
+      id: 17
+    - title: "Check platform and id form a unique key in database"
+      detail: "Make sure the account they want to link to exists in the database so their data is not blindly wiped"
+      id: 18
+    - title: "Get account data from database using key"
+      detail: "Get the account data for the Spot Market engine from the database associated with the account they are linking to"
+      id: 19
+    - title: "Set account data for current key to the fetched data"
+      detail: "Set the account data for the unique key the user is logged in with to the account data for the key they are linking to"
+      id: 20
+- title: "Allow user to connect social media accounts"
+  tests:
+    - title: "Prompt user for social media account"
+      detail: "The user will be prompted to connect a social media account and provide its details so their Spot Market profile can be associated with it"
+      id: 25
+    - title: "Check account exists"
+      detail: "Check with the social media platform that the account the user has provided is correct as well as its login details"
+      id: 26
+    - title: "Prompt the user for confirmation"
+      detail: "Ask the user for confirmation to ensure the account is correct before associating it with the profile"
+      id: 27
+    - title: "Send the account details to Spot Market engine"
+      detail: "Pass the social media account details to the Spot Market engine by its REST API so it can be associated with the user's profile"
+      id: 28

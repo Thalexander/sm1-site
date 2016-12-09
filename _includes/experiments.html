@@ -3,29 +3,30 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h2 class="section-heading">Experiments</h2>
-                <p>We are conducting a series of experiments to understand how best to create the bot:</p>
-                <table class="table">
-                    <tr>
-                        <th>Experiment No.</th>
-                        <th>Experiment Title</th>
-                        <th>Experiment Details</th>
-                        <th>Experiment Results</th>
-                        <th>Success and Failure</th>
-                        <th>Done by</th>
-                        <th>Date</th>
-                    </tr>
-                    {% for experiment in site.data.experiments %}
-                    <tr>
-                        <td>{{ experiment.no }}</td>
-                        <td>{{ experiment.title }}</td>
-                        <td>{{ experiment.details }}</td>
-                        <td>{{ experiment.results }}</td>
-                        <td>{{ experiment.successfailure }}</td>
-                        <td>{{ experiment.names }}</td>
-                        <td>{{ experiment.Date | date: "%e/%m" }}</td>
-                    </tr>
+                <p>We are conducting a series of experiments to understand how
+                   best to create the bot, to organise these we have decided on
+                   functions and then created tests for each, select a test to
+                   expand it for more detail</p>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    {% for function in site.data.experiments %}
+                    {% for experiment in function.tests %}
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="header{{experiment.id}}">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{experiment.id}}" aria-expanded="true" aria-controls="collapse{{experiment.id}}">
+                                    <b>{{function.title}}</b> - {{experiment.title}}
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse{{experiment.id}}" class="panel-collpase collapse" role="tabpanel" aria-labeledby="header{{experiment.id}}">
+                            <div class="panel-body">
+                                {{experiment.detail}}
+                            </div>
+                        </div>
+                    </div>
                     {% endfor %}
-                </table>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
