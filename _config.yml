@@ -17,7 +17,7 @@ title: Microsoft Spot Market Team 1 Project Site
 description: > # this means to ignore newlines until "baseurl:"
   The project site for Microsoft Spot Market Team 1 made as part of COMP204P
   Systems Engineering for University College London.
-baseurl: "/2016/group5" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://students.cs.ucl.ac.uk" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
@@ -25,6 +25,6 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 paginate: 5
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","Gemfile","Gemfile.lock","LICENSE"]
 
 gems: [jekyll-paginate, jekyll-feed]
