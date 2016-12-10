@@ -1,4 +1,5 @@
 - title: "Process natural Language"
+  id: 'a'
   tests:
     - title: "Create language understanding model in LUIS"
       detail: "In order to manage a conversation with the user we will need to create a model using LUIS that will extract the key information from their messages to understand how to respond to their request"
@@ -27,6 +28,7 @@
       detail: "The Spot Market engine will need to be set up on an Azure as a Virtual Machine so it can then be queried by the Bot that will be created with the Microsoft Bot Framework"
       id: 8
 - title: "Allow user to connect to bot"
+  id: 'b'
   tests:
     - title: "Create bot engine"
       detail: "A bot will need to be created using Microsoft Bot framework do that users can connect to the bot"
@@ -41,6 +43,7 @@
       detail: "The messages from the user will need to be processed with natural language processing (LUIS) and then formed into a request for Spot Market engine and then a response formatted to send to the user"
       id: 24
 - title: "Get recommendations"
+  id: 'c'
   tests:
     - title: "Get location from user if supported by platform"
       detail: "In order to provide recommendations based on location, the location of the user will need to be extracted either from the text using NLP or possibly from the channel"
@@ -52,6 +55,7 @@
       detail: "Having received a response from the Spot Market engine for the query the results will now need to be formatted as a reply to the user in a natural language style, and possibly using carousels or action buttons depending on the response"
       id: 11
 - title: "Connect user to profile"
+  id: 'd'
   tests:
     - title: "Create unique key from platform and id"
       detail: "In order to provide personal recommendations to the user the user needs to be linked to the Spot Market profile, to avoid registering which will save time and effort for the user, a unique key is created using the platform they are on (such as Skype) and their id provided by that"
@@ -69,6 +73,7 @@
       detail: "The user can then be logged in using the account data from the database into the SPot Market engine for personal recommendations"
       id: 16
 - title: "Allow user to link accounts"
+  id: 'e'
   tests:
     - title: "Get platform and id from user"
       detail: "In order to associate the user with another account the unique key of that account will be needed to change the account they are connected to in the database"
@@ -83,6 +88,7 @@
       detail: "Set the account data for the unique key the user is logged in with to the account data for the key they are linking to"
       id: 20
 - title: "Allow user to connect social media accounts"
+  id: 'f'
   tests:
     - title: "Prompt user for social media account"
       detail: "The user will be prompted to connect a social media account and provide its details so their Spot Market profile can be associated with it"
