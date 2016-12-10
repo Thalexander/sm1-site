@@ -70,7 +70,7 @@
       detail: "Using the unique key the database can be queried for the user data for the Spot Market engine for calls to its REST API"
       id: 15
     - title: "Get profile from Spot Market engine using account data"
-      detail: "The user can then be logged in using the account data from the database into the SPot Market engine for personal recommendations"
+      detail: "The user can then be logged in using the account data from the database into the Spot Market engine for personal recommendations"
       id: 16
 - title: "Allow user to link accounts"
   id: 'e'
