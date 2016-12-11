@@ -5,26 +5,35 @@
                 <h2 class="section-heading">Experiments</h2>
                 <p>We are conducting a series of experiments to understand how
                    best to create the bot, to organise these we have decided on
-                   functions and then created tests for each, select a test to
-                   expand it for more detail</p>
+                   features and then defined tests and functionality for each, select a feature to
+                   find out about the functionality and tests</p>
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    {% for function in site.data.experiments %}
-                    {% for experiment in function.tests %}
+                    {% for feature in site.data.experiments %}
                     <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="header{{experiment.id}}">
+                        <div class="panel-heading" role="tab" id="header{{feature.id}}">
                             <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{experiment.id}}" aria-expanded="true" aria-controls="collapse{{experiment.id}}">
-                                    <b>{{function.title}}</b> - {{experiment.title}}
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{feature.id}}" aria-expanded="true" aria-controls="collapse{{feature.id}}">
+                                    <b>{{feature.title}}</b>
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapse{{experiment.id}}" class="panel-collpase collapse" role="tabpanel" aria-labeledby="header{{experiment.id}}">
+                        <div id="collapse{{feature.id}}" class="panel-collpase collapse" role="tabpanel" aria-labeledby="header{{feature.id}}">
                             <div class="panel-body">
-                                {{experiment.detail}}
+                                <h3>Functionality:</h3>
+                                <ul>
+                                {% for function in feature.functions %}
+                                    <li>{{ function.title }}</li>
+                                {% endfor %}
+                                </ul>
+                                <br />
+                                <h3>Tests:</h3>
+                                <ul>
+                                {% for test in feature.tests %}
+                                    <li>{{ test.title }}</li>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
-                    {% endfor %}
                     {% endfor %}
                 </div>
             </div>
