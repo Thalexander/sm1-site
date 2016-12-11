@@ -8,28 +8,28 @@
                    functions and then created tests for each, select a test to
                    expand it for more detail</p>
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    {% for tab in site.data.experiments %}
+                    {% for feature in site.data.experiments %}
                     <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="header{{tab.id}}">
+                        <div class="panel-heading" role="tab" id="header{{feature.id}}">
                             <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{tab.id}}" aria-expanded="true" aria-controls="collapse{{tab.id}}">
-                                    <b>{{tab.title}}</b>
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{feature.id}}" aria-expanded="true" aria-controls="collapse{{feature.id}}">
+                                    <b>{{feature.title}}</b>
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapse{{tab.id}}" class="panel-collpase collapse" role="tabpanel" aria-labeledby="header{{tab.id}}">
+                        <div id="collapse{{feature.id}}" class="panel-collpase collapse" role="tabpanel" aria-labeledby="header{{feature.id}}">
                             <div class="panel-body">
                                 <h3>Functionality:</h3>
                                 <ul>
-                                {% for experiment in tab.tests %}
-                                    <li>{{ experiment.detail }}</li>
+                                {% for function in feature.functions %}
+                                    <li>{{ function.title }}</li>
                                 {% endfor %}
                                 </ul>
                                 <br />
                                 <h3>Tests:</h3>
                                 <ul>
-                                {% for experiment in tab.tests %}
-                                    <li>{{ experiment.title }}</li>
+                                {% for test in feature.tests %}
+                                    <li>{{ test.title }}</li>
                                 {% endfor %}
                             </div>
                         </div>
