@@ -1,6 +1,6 @@
 - framework: "Wit.ai"
   platform_support: "N/A"
-  api_state: "Acquired by Facebook in 2015, who is continuing to support and develop the framework. As part of Facebook, likely to be supported in the long-term."
+  api_state: "Acquired by Facebook in 2015<sup>[3]</sup>, who is continuing to support and develop the framework. As part of Facebook, likely to be supported in the long-term."
   language_support: "Node.js<br>Python<br>Ruby<br>HTTP"
   remarks: "Wit.ai provides a Bot Engine for parsing intent."
   
@@ -24,7 +24,7 @@
   
 - framework: "Microsoft Bot Framework"
   platform_support: "SMS, Web, Facebook Messenger, Telegram, Skype, Slack, GroupMe, Kik, Office 365 Mail"
-  api_state: "Large library of existing applications built on top of the framework available via the Bot Directory.<br><br>API was revised in 2016, requiring migration for developers using v2 to move to the latest version v3."
+  api_state: "Large library of existing applications built on top of the framework available via the Bot Directory.<br><br>API was revised in 2016, requiring migration for developers using v2 to move to the latest version v3.<sup>[4]</sup>"
   language_support: "Node.js, C#"
   remarks: "-"
   
