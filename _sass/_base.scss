@@ -473,6 +473,8 @@ footer {
   color: white;
   border-color: white;
   border: 1px solid;
+  margin: 3px 0px;
+  min-width: 230px;
   &:hover, &:focus, &:active, &.active {
     color: white;
     background-color: $theme-primary;
