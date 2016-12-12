@@ -21,46 +21,6 @@
                     </div>
                 </div>
                 <br>
-                <h3>Technology Analysis</h3>
-                <hr>
-                <br>
-                <p>Our key goals for a bot framework was the following: Cross-platform support, API stability and maturity, service availability and language support.</p>
-                <p>To briefly elaborate on these goals:</p>
-                <p><b>Cross-platform Support</b></p>
-                <p>Our client's target for the chatbot application was to have it accessible to as many devices as possible without the need for the user to install a client application. To that end, it is desirable for an end-user to be able to access our service from messaging services that they already use and have installed on their device. As a user's choice of messaging app can be very diverse, targeting a greater number of platforms makes it more likely that the chatbot will be available for the particular messaging platform that any given user uses.</p>
-                <p><b>API stability, maturity and service availability</b></p>
-                <p>Chatbots are a relatively new medium for human-computer interaction. While we appreciate that most APIs available for bots will be comparatively new, we hope to work with a platform that is likely to be stable and continue working long after we finalise the project.</p>
-                <p><b>Language support</b></p>
-                <p>While most messaging channels like Telegram and Facebook Messenger support any endpoint that exposes a RESTful API, leaving the choice of server-side language to the developer, the same is not true for bot frameworks. Bot frameworks often have their plumbing and connector systems already written in a particular language, exposing an API via a language-specific SDK. Language support is thus a consideration for us to ensure that we can quickly get up to speed working with the bot framework.</p>
-                <p>We looked into the following framework platforms: Wit.ai, API.ai, Gupshup, IBM Watson's Conversation Service and the Microsoft Bot Framework.</p>
-                <br />
-                
-                <table class="table table-bordered">
-                    <tr>
-                        <th>Bot Framework</th>
-                        <th>Cross-platform support</th>
-                        <th>API stability, maturity and service availability</th>
-                        <th>Language support</th>
-                        <th>Remarks</th>
-                    </tr>
-                    {% for item in site.data.research_frameworks %}
-                    <tr>
-                        <td>{{ item.framework }}</td>
-                        <td>{{ item.platform_support }}</td>
-                        <td>{{ item.api_state }}</td>
-                        <td>{{ item.language_support }}</td>
-                        <td>{{ item.remarks }}</td>
-                    </tr>
-                    {% endfor %}
-                </table>
-
-                <p>Apart from the technologies that we explored, there were also other services available such as Flow XO and Reply.ai. However, these were geared towards established businesses and had limited general availability.</p>
-
-                <p>Upon analysis on the technologies we have researched on, we decided to utilise the Microsoft Bot Framework for the Spot Market Chatbot. Apart from being part of the Microsoft technology stack, the Microsoft Bot Framework supported most consumer messaging platforms such as Facebook Messenger, Telegram and Skype. While platforms like API.ai had a larger selection of supported platforms, we realised that the additional platforms were mainly oriented towards enterprises (Cisco Spark) or were other developer platforms (Twilio). The exception was support for the Line platform, which has a large consumer market share but was not supported by the Microsoft Bot Framework. However, the Microsoft Bot Framework has an established presence in bots with an extensive library of in-service bots by different organisations and would likely have a stable API.</p>
-
-                <p>One concern that we had with regards to the goal of cross-platform support was that in order to expose a consistent API, frameworks might only cater to the lowest common denominator among all messaging platforms, precluding the usage of more advanced, platform-specific features. The Microsoft Bot Framework provides an avenue to make use of platform-specific features through custom extensions to channel capabilities.</p>
-
-                <hr>
             </div>
         </div>
     </div>
