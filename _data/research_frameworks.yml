@@ -1,0 +1,30 @@
+- framework: "Wit.ai"
+  platform_support: "N/A"
+  api_state: "Acquired by Facebook in 2015, who is continuing to support and develop the framework. As part of Facebook, likely to be supported in the long-term."
+  language_support: "Node.js<br>Python<br>Ruby<br>HTTP"
+  remarks: "Wit.ai provides a Bot Engine for parsing intent."
+  
+- framework: "API.ai"
+  platform_support: "SMS (via Twilio), Facebook Messenger, Telegram, Skype, Slack, Twitter, Kik, Twilio, Line, Cisco Spark, Cisco Tropo"
+  api_state: "Product from privately held company known as Speaktoit. Company founded in 2010."
+  language_support: "Node.js, Python, Ruby, JavaScript, C#, Unity, C++, Java, PHP"
+  remarks: "Bandwidth-limited free tier."
+  
+- framework: "Gupshup"
+  platform_support: "SMS, Facebook Messenger, Telegram, Skype, Slack, Twitter, Hipchat, Kik, Twilio, Line, Cisco Spark, Teamchat, Smooch, Jio"
+  api_state: "Company started in Mumbai, now headquartered in Silicon Valley "
+  language_support: "Javascript"
+  remarks: "Disorganised documentation"
+  
+- framework: "IBM Watson"
+  platform_support: "Web, Facebook Messenger, Slack, Twilio"
+  api_state: "IBM Watson is an established cognitive platform."
+  language_support: "Node.js, Java, Python"
+  remarks: "Known as the IBM Watson Conversation service.<br>Free tier for up to 1000 queries per month.<br>The Conversation service is available to the public, but geared towards enterprise solutions."
+  
+- framework: "Microsoft Bot Framework"
+  platform_support: "SMS, Web, Facebook Messenger, Telegram, Skype, Slack, GroupMe, Kik, Office 365 Mail"
+  api_state: "Large library of existing applications built on top of the framework available via the Bot Directory.<br><br>API was revised in 2016, requiring migration for developers using v2 to move to the latest version v3."
+  language_support: "Node.js, C#"
+  remarks: "-"
+  
