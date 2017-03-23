@@ -489,10 +489,17 @@ footer {
   }
 }
 
+.fa {
+  color: $theme-primary;
+}
+
 .bg-primary {
   background: $theme-primary;
   background: -webkit-linear-gradient($theme-primary, $theme-secondary);
   background: linear-gradient($theme-primary, $theme-secondary);
+  .fa {
+    color: #21cddb;
+  }
 }
 
 .text-primary {
