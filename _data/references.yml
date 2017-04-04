@@ -1,0 +1,12 @@
+- number: 1
+  reference: "Telegram. (2016). Bots: An introduction for developers. [online] Available at: https://core.telegram.org/bots [Accessed 1 Dec. 2016]."
+- number: 2
+  reference: "Facebook for Developers. (2016). Messenger Platform - Documentation - Facebook for Developers. [online] Available at: https://developers.facebook.com/docs/messenger-platform [Accessed 1 Dec. 2016]."
+- number: 3
+  reference: "Wit.ai. (2016). Wit.ai is joining Facebook. [online] Available at: https://wit.ai/blog/2015/01/05/wit-ai-facebook [Accessed 4 Dec. 2016]."
+- number: 4
+  reference: "Microsoft. (2016). Upgrade your bot to V3 | Documentation | Bot Framework. [online] Available at: https://docs.botframework.com/en-us/support/upgrade-to-v3/ [Accessed 4 Dec. 2016]."
+- number: 5
+  reference: "Statista. (2016). LINE: number of monthly active users 2016 | Statistic. [online] Available at: https://www.statista.com/statistics/327292/number-of-monthly-active-line-app-users/ [Accessed 11 Dec. 2016]."
+- number: 6
+  reference: "Microsoft. (2016). Channels Custom Channel Capabilities | Bot Builder SDK C# Reference Library | Bot Framework. [online] Available at: https://docs.botframework.com/en-us/csharp/builder/sdkreference/channels.html [Accessed 11 Dec. 2016]."
