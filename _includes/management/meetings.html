@@ -1,0 +1,23 @@
+<section id="management" class="download bg-primary text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h2 class="section-heading">Client Meetings</h2>
+                <p>We had frequent meetings with the clients to discuss progress and issues</p>
+                <br />
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Date</th>
+                        <th>Details</th>
+                    </tr>
+                    {% for meeting in site.data.meetings %}
+                    <tr>
+                        <td>{{ meeting.date | date_to_long_string }}</td>
+                        <td>{{ meeting.details }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
