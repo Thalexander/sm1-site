@@ -1,10 +1,16 @@
-<section id="design" class="download bg-primary text-center">
+<section id="design" class="download bg-primary">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h2 class="section-heading">Design Patterns <i class="fa fa-puzzle-piece"></i></h2>
                 <p>We have used design patterns extensively in our development process, these aid maintainability of our code as they can be recognised by other developers and avoids us having to 'reinvent the wheel' by using an accepted solution to a problem.
                 </p>
+                <p><b>async-waterfall</b></p>
+                <p>One of the common, recurring patterns in the bot code are asynchronous function handlers. As Javascript is an asynchronous language, callbacks often have to be used to take an action in response to a result. This can lead to a lot of nesting! The <i>async-waterfall</i> pattern keeps code tidy and reduces boilerplate by keeping functions to be executed sequentially defined in a flat array, passing the results of one function to the next in the array when the previous function completes.</p>
+                <p><b>Dependency Injection</b></p>
+                <p>Dependency injection refers to...</p>
+                <p><b>Method Chaining</b></p>
+                <p>Method chaining involves functions returning the current object itself so that function calls can be chained together without requiring any intermediate variables.<p>
             </div>
         </div>
     </div>
