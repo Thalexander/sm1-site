@@ -8,9 +8,9 @@
                 <p><b>async-waterfall</b></p>
                 <p>One of the common, recurring patterns in the bot code are asynchronous function handlers. As Javascript is an asynchronous language, callbacks often have to be used to take an action in response to a result. This can lead to a lot of nesting! The <i>async-waterfall</i> pattern keeps code tidy and reduces boilerplate by keeping functions to be executed sequentially defined in a flat array, passing the results of one function to the next in the array when the previous function completes.</p>
                 <p><b>Dependency Injection</b></p>
-                <p>Dependency injection refers to...</p>
+                <p>Dependency injection refers to the ability to provide a dependency that an object needs, without requiring that object to construct it itself. The intent is to decouple specific implementations from client code and allow dependencies to be swapped out easily. We have used dependency injection to quickly programmatically test our chatbot without having to deploy it as a web service every time. In this case, dependency injection has allowed us to swap out the web connector with a console connector, enabling us to test the bot in a local console during development instead of having to deploy it to a full blown webserver, improving our iteration times.</p>
                 <p><b>Method Chaining</b></p>
-                <p>Method chaining involves functions returning the current object itself so that function calls can be chained together without requiring any intermediate variables.<p>
+                <p>Method chaining involves functions returning the current object itself so that function calls can be chained together without requiring any intermediate variables. When appropriate, we made use of method chaining to make our code more concise.<p>
             </div>
         </div>
     </div>
