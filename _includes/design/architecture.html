@@ -1,19 +1,33 @@
-<section id="architecture" class="download bg-primary">
+<section id="architecture" class="download">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h2 class="section-heading">System Architecture <i class="fa fa-puzzle-piece"></i></h2>
-                <p>Architecture diagram here.
-                </p>
-                <p><b>Spot Market Chatbot</b></p>
-                <p>This is the user-facing component of the bot. Users can get in touch with the bot through a variety of messaging platforms, including Telegram, Skype, and Facebook Messenger. The bot serves as a natural interface to the powerful recommendation system of the Spot Market Recommendation Engine, allowing users to make requests for information via natural language and have recommendations to products and services similarly returned in a easy-to-understand manner. The bot is also location-aware provided that the user opts to share their location with the bot, and can provide recommendations in the vicinity of the user. Users can also provide feedback through the bot to express their preferences and reinforce the recommendation engine's prediction models for future recommendations.</p>
-                <p><b>Natural Language Processing</b></p>
-                <p>We are using Microsoft's Language Understanding Intelligent Service (LUIS) for language processing. We established intents, entities as well as reference utterances to establish our language model, training the model to interpret users' responses. This allows us to extract the intent of user-submitted messages as well as the entity, category or product type that the user is trying to convey to the bot.</p>
-                <p><b>Spot Market Recommendation Engine</b></p>
-                <p>The Spot Market Recommendation Engine is an ongoing development by Masters students at UCL in collaboration with Microsoft, and uses machine learning techniques to recommend products and services.<p>
-                <p><b>Spot Market Database</b></p>
-                <p>The Spot Market database holds user account information as well as data on retailers, products and services. The database serves as the primary source of information from which the recommendation engine and chatbot draw information.<p>
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">System Architecture</h2>
+                <hr class="primary">
+                <br />
+                <div id="sys_architecture_diagram">
+                    <div class="panel-body">
+                        <img src="{{ "/img/system_architecture.png" | relative_url }}"></img>
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <br>
+            <h3><b>Spot Market Chatbot</b></h3>
+            <p>This is the user-facing component of the bot. Users can get in touch with the bot through a variety of messaging platforms, including Telegram, Skype, and Facebook Messenger. The bot serves as a natural interface to the powerful recommendation system of the Spot Market Recommendation Engine, allowing users to make requests for information via natural language and have recommendations to products and services similarly returned in a easy-to-understand manner. The bot is also location-aware provided that the user opts to share their location with the bot, and can provide recommendations in the vicinity of the user. Users can also provide feedback through the bot to express their preferences and reinforce the recommendation engine's prediction models for future recommendations.</p>
+            <br>
+            <h3><b>Natural Language Processing</b></h3>
+            <p>We are using Microsoft's Language Understanding Intelligent Service (LUIS) for language processing. We established intents, entities as well as reference utterances to establish our language model, training the model to interpret users' responses. This allows us to extract the intent of user-submitted messages as well as the entity, category or product type that the user is trying to convey to the bot.</p>
+            <br>
+            <h3><b>Spot Market Recommendation Engine</b></h3>
+            <p>The Spot Market Recommendation Engine is an ongoing development by Masters students at UCL in collaboration with Microsoft, and uses machine learning techniques to recommend products and services.</p>
+            <br>
+            <h3><b>Spot Market Database</b></h3>
+            <p>The Spot Market database holds user account information as well as data on retailers, products and services. The database serves as the primary source of information from which the recommendation engine and chatbot draw information.</p>
+            <hr>
         </div>
     </div>
 </section>
