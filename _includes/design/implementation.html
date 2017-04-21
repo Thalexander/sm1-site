@@ -1,0 +1,25 @@
+<section id="implementation" class="download bg-primary">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">System Implementation</h2>
+                <hr class="primary">
+                <br />
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+                <br>
+                <h3><b>Presentation of Recommendation Results</b></h3>
+                <p>To present recommendations to the user in a pleasant, easy-to-understand format, we used carousels to show product recommendations. Carousels allowed us to emphasize product images, which are more immediately identifiable to the user. It also allowed us to present recommendation information in a horizontally scrolling viewport, making it much more tidy and elegant for instances where there are multiple recommendations.</p>
+                <br>
+                <h3><b>Location Awareness</b></h3>
+                <p>As the chatbot is a cloud service that requires no software installation, it would not be possible to actively acquire a user's location for every request. To obtain the user's location to provide location-aware recommendations, we have implemented a location handler that saves the location of the user whenever he or she sends a location to the chatbot. All messaging platforms that we are targeting support the sending of location data. We persist this data so that the user's location can be used for further searches without requiring that the location be re-sent for each request. At any time, a user can update his or her location or even ask for recommendations in another area by sending a location to the bot.</p>
+                <br>
+                <h3><b>OTP Authentication</b></h3>
+                <p>As the Spot Market Recommendation Engine made use of user profiles to store user information as well as preferences, it was important that we exposed a way to allow users to log in to their user profiles via the chatbot. Unlike a traditional web-based interface or mobile app, passwords could not be masked in the setting of a conversational chatbot - they would be sent in the clear over the messaging service and be saved as conversation history. Certainly another manner of authentication would be needed that did not require users typing their passwords into the bot. We decided to implement a one-time-pin (OTP) style authentication method. When a user entered his or her email to log in to the bot, the bot would send an email containing a cryptographically strong pseudo-random 5-digit pin to the user. Users who have their email accounts set up on their mobile phones would possibly receive the pin number as a notification and be able to send the pin to the bot right away. The pin entered by the user is matched against the generated pin and the user is authenticated and logged in if the pins match. This allowed us to implement an authentication system that did not require users to send passwords to the bot, but yet still ensure that they were the rightful owner of their user profiles.</p>
+                <hr>
+        </div>
+    </div>
+</section>
