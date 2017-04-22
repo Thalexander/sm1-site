@@ -2,6 +2,8 @@
   details: "Initial	meeting	with client and introduction. Project Video and presentation were given. Q & A on the tools and development so far, and how we could access the code and tools needed."
 - date: 2016-10-31
   details: "Asked the prepared questions regarding the spot market engine capabilities and how we can rely on that based on the set of requirements, getting a clearer description on the main tasks and presenting the MoSCoW document to the client."
+- date: 2016-11-10
+  details: "Discussed the issues with the recommendation engine. Showed the progress on website and the experiments such as surveys."
 - date: 2016-11-23
   details: "Discussed the issues with the recommendation engine. The client asked us to keep trying and get the engine to work on our systems. We also showed our progress on the website and bot experiments to the client over the meeting."
 - date: 2016-12-9
@@ -12,4 +14,3 @@
   details: "Showcase of the latest demo of the project, discussed further improvements and explained timeline and future perspectives."
 - date: 2017-3-24
   details: "Demonstrated our progress with the chatbot, in a web interafce and through telegram to demonstarte location handling. The client was happy with the bot and remarked that it worked well. Arranged a code handover date."
-  
