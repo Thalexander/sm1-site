@@ -1,4 +1,4 @@
-<section id="design" class="download bg-primary">
+<section id="patterns" class="download bg-primary">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -11,6 +11,8 @@
                 <p>Dependency injection refers to the ability to provide a dependency that an object needs, without requiring that object to construct it itself. The intent is to decouple specific implementations from client code and allow dependencies to be swapped out easily. We have used dependency injection to quickly programmatically test our chatbot without having to deploy it as a web service every time. In this case, dependency injection has allowed us to swap out the web connector with a console connector, enabling us to test the bot in a local console during development instead of having to deploy it to a full blown webserver, improving our iteration times.</p>
                 <p><b>Method Chaining</b></p>
                 <p>Method chaining involves functions returning the current object itself so that function calls can be chained together without requiring any intermediate variables. When appropriate, we made use of method chaining to make our code more concise.</p>
+                <p><b>Chain of Responsibility</b></p>
+                <p>The chain-of-responsibility pattern refers to having a group of processing objects that handle specific actions and passing actions along this chain until one of the processing objects handle it, at which point it is consumed. This gives more than one object an opportunity to handle the action. In our chatbot, our dialogue handlers are structured in this way, with dialogue intents chained in order of priority. This allowed us to match and route a wide variety of intents to the right handlers, including bot commands (e.g. /login) as well as intents extracted from natural language processing. (e.g. Find Item)</p>
             </div>
         </div>
     </div>
