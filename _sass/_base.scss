@@ -524,6 +524,12 @@ footer {
   }
 }
 
+.btn-primary {
+    color: $theme-primary;
+    border-colour: $theme-primary;
+    background-color: white;
+}
+
 .btn {
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   text-transform: uppercase;
