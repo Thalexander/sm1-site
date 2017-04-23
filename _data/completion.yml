@@ -9,7 +9,7 @@
 - task: "The bot must use Spot Market recommendations"
   priority: 1
   status: "Complete"
-  contributors: "Alex, Raymond, Maya"
+  contributors: "All"
 - task: "The bot must get the user's location if the channel of choice allows for it"
   priority: 1
   status: "Complete"
@@ -17,7 +17,7 @@
 - task: "The bot must provide appropriate recommendations based on user's input"
   priority: 1
   status: "Complete"
-  contributors: "Alex, Raymond, Maya"
+  contributors: "All"
 - task: "The bot must recommend pomotions and products in the vicinity of the user"
   priority: 1
   status: "Complete"
@@ -33,11 +33,11 @@
 - task: "The bot should not require the installation of a client app"
   priority: 2
   status: "Complete"
-  contributors: "Raymond"
+  contributors: "All"
 - task: "The bot should be deployable on popular messaging platforms"
   priority: 2
   status: "Complete"
-  contributors: "Raymond"
+  contributors: "All"
 - task: "The bot could allow for discovery of new places when requested by the user"
   priority: "3"
   status: "Complete"
