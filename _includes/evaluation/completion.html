@@ -1,0 +1,31 @@
+<section id="evaluation" class="download text-center">
+    <div class="container">
+        <div class="row">
+            <div class="">
+                <h2 class="section-heading">Completion</h2>
+                <hr />
+                <br />
+                <p>This is a listing of functional requirements, and user cases, along with their priority (with 1 being the highest), completion status and contributors</p>
+                <hr />
+                <br />
+                <table class="table table-bordered table-hover table-striped">
+                    <tr>
+                        <th>Task</th>
+                        <th>Priority</th>
+                        <th>Status</th>
+                        <th>Contributors</th>
+                    </tr>
+                    {% for task in site.data.completion %}
+                    <tr>
+                        <td>{{ task.task }}</td>
+                        <td>{{ task.priority }}</td>
+                        <td>{{ task.status }}</td>
+                        <td>{{ task.contributors }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+</section>
