@@ -8,10 +8,10 @@
                 <hr />
                 <br />
                 <h3><b>Architecture Design</b></h3>
-                <p>
+                <p>By separating our system into independent components we have made it easier to maintain as the interactions between them are planned, and we can modify the implementation details easily without breaking it, on the downside as we use REST requests to communicate between them a typical interaction would involve 2 requests internally which may have a negative impact on performance if the connection between them is not fast enough.</p>
                 <br />
                 <h3><b>User Experience</b></h3>
-                <p>
+                <p>We allow people to talk to the bot using natural language, as a result the usage of the bot is quite intuitive as they merely have to specify what they want to do. A downside of this however is worse dicoverability of what they can do with it, although we have added help dialogs to mitigate this.</p>
                 <br />
                 <h3><b>Functionality</b></h3>
                 <p>We have been able to meet all of the MoSCoW requirements that we defined, however since we do not have a working verion of the Spot Market engine we cannot offer the machine learning capabilities. As a result of our efforts to match their api though it should not require much work to port the bot over to their api when it is finished.</p>
