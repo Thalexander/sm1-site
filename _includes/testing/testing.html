@@ -6,16 +6,17 @@
                 <hr>
                 <br>
                 <h3 class="text-center"><b>Testing Methods</b></h3>
-                <p>In order to see if we can provide a great user experience for consumers, we will use multiple different testing methods. As we are planning to use the Microsoft bot framework using Node.js, we will need to look into the testing strategies available for this platform.</p>
+                <p>To validate that no existing code had been broken as we iterated on code during development, we wrote test suites to programmatically test different components of the bot.</p>
+                <p>To make sure that we could provide a great user experience for consumers, we also performed user acceptance testing to obtain feedback on the bot's design and functionality.</p>
                 <br>
                 <p class="text-center"><b>Unit Testing</b></p>
-                <p>Unit testing allows the developer to check small “units” of the project using unit test functions. For Node.js in particular, one of the famous unit test frameworks is Mocha. Mocha is open source, simple to use and is very easy to learn. We are planning to use Mocha for testing the functional units of the bot during the development process.</p>
+                <p>Unit testing allows the developer to independently test small “units” of the project using unit test functions. Using the open source Mocha test framework for Node.js, we wrote test suites to test conversational functionality as well as commands (/help) and product searches. To programmatically test conversations with the bot, we also leveraged the ConsoleConnector in the Microsoft Bot Framework to send bot ouptut to the terminal where it could be read and parsed against expected results.</p>
                 <br>
                 <p class="text-center"><b>Integration Testing</b></p>
-                <p>Integration testing tests the communication between units of the code, in order to show that all units work while interacting with each other. Mocha and Chai also support integration testing of a project, and we are hoping to be able to use them during our development process.</p>
+                <p>Integration testing tests the communication between units of the code, in order to ensure that all units work while interacting with each other. Our automated test suite encompasses the flow of conversation between the user and the bot from conversation initiation to a request for product recommendations - this enables us to test end-to-end integration of the bot to validate that it is working as expected without requiring manual verification.</p>
                 <br>
                 <p class="text-center"><b>Acceptance Testing</b></p>
-                <p>As we develop the chatbot, we intend to perform user acceptance testing to monitor whether we are meeting the requirements that the client has set out. This will involve putting the bot out to regular users as well as the client to ensure that the bot behaves according to specifications and that users can easily interact with the bot. </p>
+                <p>To ensure a good user experience, we performed user acceptance testing (UAT) with regular users and the client to monitor whether we are meeting the requirements that the client has set out. Our tests with users were done in groups of 5. We focused on testing the natural language models that we have implemented as well as the conversational flow for interaction with the chatbot to ensure that it aligned with HCI principles. We received positive feedback during the testing - the results were promising. We found that at times we needed to improve the language models for a better user interaction experience and made appropriate changes.</p>
                 <hr>
             </div>
         </div>
