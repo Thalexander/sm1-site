@@ -18,7 +18,7 @@
   priority: 1
   status: "Complete"
   contributors: "All"
-- task: "The bot must recommend pomotions and products in the vicinity of the user"
+- task: "The bot must recommend promotions and products in the vicinity of the user"
   priority: 1
   status: "Complete"
   contributors: "Alex, Raymond"
