@@ -13,6 +13,8 @@
                 <p>Method chaining involves functions returning the current object itself so that function calls can be chained together without requiring any intermediate variables. When appropriate, we made use of method chaining to make our code more concise.</p>
                 <p><b>Chain of Responsibility</b></p>
                 <p>The chain-of-responsibility pattern refers to having a group of processing objects that handle specific actions and passing actions along this chain until one of the processing objects handle it, at which point it is consumed. This gives more than one object an opportunity to handle the action. In our chatbot, our dialogue handlers are structured in this way, with dialogue intents chained in order of priority. This allowed us to match and route a wide variety of intents to the right handlers, including bot commands (e.g. /login) as well as intents extracted from natural language processing. (e.g. Find Item)</p>
+                <p><b>Singleton</b></p>
+                <p>The singleton pattern refers to having only one instantiated object of a class. It is useful when it  makes sense for only one instance of a class to exist, such as a class that coordinates actions. As Node.js's <i>require</i> statement only includes the referenced module once, no matter how many times it is invoked, Node modules only exist as a single instance. We have leveraged this in our own code in our unit testing modules, which imports the main bot module as a single instance.</p>
             </div>
         </div>
     </div>
