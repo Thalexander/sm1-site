@@ -1,0 +1,31 @@
+<section id="evaluation" class="download text-center">
+    <div class="container">
+        <div class="row">
+            <div class="">
+                <h2 class="section-heading">Work Packages</h2>
+                <hr />
+                <br />
+                <p>This is a listing of work packages in term 2 (excluding development) and contributors</p>
+                <hr />
+                <br />
+                <table class="table table-bordered table-hover table-striped">
+                    <tr>
+                        <th>Id</th>
+                        <th>Work Package</th>
+                        <th>Category</th>
+                        <th>Contributors</th>
+                    </tr>
+                    {% for task in site.data.packages %}
+                    <tr>
+                        <td>{{ task.id }}</td>
+                        <td>{{ task.package }}</td>
+                        <td>{{ task.category }}</td>
+                        <td>{{ task.contributors }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,44 @@
+- id: 1
+  package: "Client Meetings"
+  category: "Client Liason"
+  contributors: "All"
+- id: 2
+  package: "Reviewing related technologies"
+  category: "Research"
+  contributors: "Raymond, Alex"
+- id: 3
+  package: "Bi-weekly Report 1"
+  category: "Report Writing"
+  contributors: "Maya"
+- id: 4
+  package: "Bi-weekly Report 2"
+  category: "Report Writing"
+  contributors: "Maya"
+- id: 5
+  package: "Bi-weekly report 3"
+  category: "Report Writing"
+  contributors: "Maya"
+- id: 6
+  package: "Bi-weekly report 4"
+  category: "Report Writing"
+  contributors: "Maya"
+- id: 7
+  package: "Bi-weekly report 5"
+  category: "Report Writing"
+  contributors: "Maya"
+- id: 8
+  package: "Presentation Slides Preparation"
+  category: "Presentation"
+  contributors: "All"
+- id: 9
+  package: "Video Editing"
+  category: "Video"
+  contributors: "Raymond, Maya"
+- id: 10
+  package: "Website Editing"
+  category: "Website"
+  contributors: "All"
+- id: 11
+  package: "Scrum Planning (VSTS Sprints)"
+  category: "Development"
+  contributors: "All"
